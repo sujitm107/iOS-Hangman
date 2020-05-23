@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HangmanS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,7 +66,7 @@
         <!--Title-->
         <scene sceneID="Bqh-Op-gIz">
             <objects>
-                <viewController id="4MG-sW-50G" customClass="WordSelectionViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4MG-sW-50G" customClass="WordSelectionViewController" customModule="HangmanS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r4j-jz-z4d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,11 +86,17 @@
                                     <action selector="confirmTapped:" destination="4MG-sW-50G" eventType="touchUpInside" id="eKy-Fd-s2T"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0l-Ie-pDJ">
+                                <rect key="frame" x="178.5" y="483" width="57" height="30"/>
+                                <state key="normal" title="Random"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="IP2-c9-c90" firstAttribute="centerY" secondItem="r4j-jz-z4d" secondAttribute="centerY" constant="-100" id="D3Y-MD-nYf"/>
+                            <constraint firstItem="i0l-Ie-pDJ" firstAttribute="centerX" secondItem="r4j-jz-z4d" secondAttribute="centerX" id="Jgl-0j-DxT"/>
                             <constraint firstItem="ZoW-eH-Lo3" firstAttribute="centerY" secondItem="r4j-jz-z4d" secondAttribute="centerY" id="avf-34-y5f"/>
+                            <constraint firstItem="i0l-Ie-pDJ" firstAttribute="top" secondItem="ZoW-eH-Lo3" secondAttribute="bottom" constant="20" id="tUA-t0-ybl"/>
                             <constraint firstItem="ZoW-eH-Lo3" firstAttribute="centerX" secondItem="r4j-jz-z4d" secondAttribute="centerX" id="vXR-cK-gpY"/>
                             <constraint firstItem="IP2-c9-c90" firstAttribute="centerX" secondItem="r4j-jz-z4d" secondAttribute="centerX" id="ydv-dK-kdU"/>
                         </constraints>
@@ -109,7 +115,7 @@
         <!--Title-->
         <scene sceneID="eVp-md-0es">
             <objects>
-                <viewController id="Kmd-bp-KB5" customClass="GuessViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kmd-bp-KB5" customClass="GuessViewController" customModule="HangmanS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MzH-8i-3aV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

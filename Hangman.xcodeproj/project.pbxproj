@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		812FDE5D2478A5C800108FE2 /* To-Do */ = {isa = PBXFileReference; lastKnownFileType = text; path = "To-Do"; sourceTree = "<group>"; };
-		813F80AA2474F483003AA586 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813F80AA2474F483003AA586 /* HangmanS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangmanS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813F80AD2474F483003AA586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		813F80AF2474F483003AA586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		813F80B12474F483003AA586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		813F80AB2474F483003AA586 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				813F80AA2474F483003AA586 /* Hangman.app */,
+				813F80AA2474F483003AA586 /* HangmanS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 			);
 			name = Hangman;
 			productName = Hangman;
-			productReference = 813F80AA2474F483003AA586 /* Hangman.app */;
+			productReference = 813F80AA2474F483003AA586 /* HangmanS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -307,8 +307,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Hangman;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sujit;
+				PRODUCT_NAME = HangmanS;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,8 +325,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Hangman;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.sujit;
+				PRODUCT_NAME = HangmanS;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
