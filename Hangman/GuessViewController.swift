@@ -12,6 +12,16 @@ class GuessViewController: UIViewController {
     
     var word: String?
     var blankWord: String = ""
+    
+    var imageArray: [UIImage?] = [
+        UIImage(named: "Hook"),
+        UIImage(named: "Head"),
+        UIImage(named: "Body"),
+        UIImage(named: "LegOne"),
+        UIImage(named: "LegTwo"),
+        UIImage(named: "GameOver")
+    ]
+    
     @IBOutlet weak var guessWordLabel: UILabel!
     @IBOutlet weak var guessProgressView: UIProgressView!
     //progressView has a min: 0.0, max: 1
@@ -27,25 +37,30 @@ class GuessViewController: UIViewController {
         for _ in 0..<word!.count{
             blankWord += "-"
         }
+        
         guessWordLabel.text = blankWord
         guessProgressView.progress = 0
-        hangImageView.image = UIImage(named: "hangman")
+        hangImageView.image = imageArray[0]
     }
     
     @IBAction func letterTapped(_ sender: UIButton){
         
         let letter: String = sender.currentTitle!
         
-        if(( word?.contains(letter)) == true) {
+        if(( word?.contains(letter)) == true) { //good guess
             //print(true)
             //flip the dash
             flipDash(letter)
             //disable the button
             disableButton(sender)
-        }else{
+        }else{ //bad guess
             //change progressView
             guessProgressView.setProgress(guessProgressView.progress + 0.2, animated: true)
             //change the image
+            
+            let imageIndex: Int = Int((guessProgressView.progress * 5))
+            hangImageView.image = imageArray[imageIndex]
+            
             //disable the button
             disableButton(sender)
         }

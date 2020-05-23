@@ -35,7 +35,7 @@ class WordSelectionViewController: UIViewController {
         
         wordText = wordText?.trimmingCharacters(in: .whitespaces)
         if(wordText?.count == 0){
-            let alert = UIAlertController(title: "Empty String", message: "Please Enter a Valid Word", preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: "Empty String", message: "Your word is BLANK!", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
                 self.wordTextField.text = ""
             }))
