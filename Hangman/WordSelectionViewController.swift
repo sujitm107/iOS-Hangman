@@ -15,20 +15,33 @@ class WordSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Pick A Word"
-        
+        setUI()
+    }
+    
+    func setUI(){
+        self.wordTextField.text = ""
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "SelectionToGuess") {
             let destVC = segue.destination as! GuessViewController
-            
             destVC.word = sender as? String
         }
     }
     
     @IBAction func confirmTapped(_ sender: Any) {
         
-        let wordText = wordTextField.text?.uppercased()
+        var wordText = wordTextField.text?.uppercased()
+        
+        wordText = wordText?.trimmingCharacters(in: .whitespaces)
+        if(wordText?.count == 0){
+            let alert = UIAlertController(title: "Empty String", message: "Please Enter a Valid Word", preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+                self.wordTextField.text = ""
+            }))
+            
+            self.present(alert, animated: true)
+        }
         performSegue(withIdentifier: "SelectionToGuess", sender: wordText)
         
     }

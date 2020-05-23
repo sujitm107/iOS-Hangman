@@ -529,20 +529,38 @@
                                     <constraint firstAttribute="width" constant="150" id="Cfw-CI-huh"/>
                                 </constraints>
                             </stackView>
+                            <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="gFC-47-Hly">
+                                <rect key="frame" x="44.5" y="481" width="325" height="2"/>
+                                <color key="progressTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-zj-vdg">
+                                <rect key="frame" x="107" y="240.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Jpz-pS-LPe"/>
+                                    <constraint firstAttribute="width" constant="200" id="omN-OI-LJk"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="gFC-47-Hly" firstAttribute="trailing" secondItem="hDy-uq-U9J" secondAttribute="trailing" id="49w-0G-JAg"/>
                             <constraint firstItem="BwH-j5-ehi" firstAttribute="centerY" secondItem="MzH-8i-3aV" secondAttribute="centerY" constant="-250" id="4xc-ic-5Vw"/>
                             <constraint firstItem="5Dp-D6-Z3E" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="6f1-sC-CKJ"/>
                             <constraint firstItem="yyN-oP-lQk" firstAttribute="trailing" secondItem="1UX-Kh-CD8" secondAttribute="trailing" id="8bu-Fn-xRH"/>
                             <constraint firstItem="1UX-Kh-CD8" firstAttribute="top" secondItem="hDy-uq-U9J" secondAttribute="bottom" constant="25" id="Dvy-cH-1G2"/>
+                            <constraint firstItem="sQz-zj-vdg" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="Gge-Am-UmQ"/>
                             <constraint firstItem="yyN-oP-lQk" firstAttribute="leading" secondItem="1UX-Kh-CD8" secondAttribute="leading" id="Gtg-Ex-v1J"/>
                             <constraint firstItem="hDy-uq-U9J" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="HHL-su-ZKJ"/>
                             <constraint firstItem="hDy-uq-U9J" firstAttribute="top" secondItem="5Dp-D6-Z3E" secondAttribute="bottom" constant="25" id="IyR-KN-DfI"/>
                             <constraint firstItem="9OE-Xz-ffT" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="NyP-c5-6wQ"/>
+                            <constraint firstItem="sQz-zj-vdg" firstAttribute="top" secondItem="BwH-j5-ehi" secondAttribute="bottom" constant="15" id="OaU-7z-jU0"/>
                             <constraint firstItem="1UX-Kh-CD8" firstAttribute="leading" secondItem="hDy-uq-U9J" secondAttribute="leading" id="aOs-pr-cGi"/>
+                            <constraint firstItem="gFC-47-Hly" firstAttribute="leading" secondItem="hDy-uq-U9J" secondAttribute="leading" id="cTC-82-gnu"/>
                             <constraint firstItem="5Dp-D6-Z3E" firstAttribute="centerY" secondItem="MzH-8i-3aV" secondAttribute="centerY" constant="75" id="f0D-rg-Not"/>
                             <constraint firstItem="BwH-j5-ehi" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="hpm-Ac-TpZ"/>
+                            <constraint firstItem="5Dp-D6-Z3E" firstAttribute="top" secondItem="gFC-47-Hly" secondAttribute="bottom" constant="20" id="oQt-2W-DW5"/>
                             <constraint firstItem="1UX-Kh-CD8" firstAttribute="trailing" secondItem="hDy-uq-U9J" secondAttribute="trailing" id="qDE-fd-BQK"/>
                             <constraint firstItem="yyN-oP-lQk" firstAttribute="top" secondItem="1UX-Kh-CD8" secondAttribute="bottom" constant="25" id="wgJ-ZP-VPx"/>
                             <constraint firstItem="9OE-Xz-ffT" firstAttribute="top" secondItem="yyN-oP-lQk" secondAttribute="bottom" constant="25" id="wuR-Ya-lr9"/>
@@ -551,7 +569,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="7Gr-L8-aXF"/>
                     <connections>
+                        <outlet property="guessProgressView" destination="gFC-47-Hly" id="b08-d4-NZn"/>
                         <outlet property="guessWordLabel" destination="BwH-j5-ehi" id="7sh-ci-Hu8"/>
+                        <outlet property="hangImageView" destination="sQz-zj-vdg" id="Lrc-dK-Xr9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxW-cu-Uh8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
