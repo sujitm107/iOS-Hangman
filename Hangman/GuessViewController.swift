@@ -26,6 +26,7 @@ class GuessViewController: UIViewController {
     @IBOutlet weak var guessProgressView: UIProgressView!
     //progressView has a min: 0.0, max: 1
     @IBOutlet weak var hangImageView: UIImageView!
+    @IBOutlet weak var definitionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,8 @@ class GuessViewController: UIViewController {
         guessWordLabel.text = blankWord
         guessProgressView.progress = 0
         hangImageView.image = imageArray[0]
+        
+        definitionLabel.text = "Definition: "
     }
     
     @IBAction func letterTapped(_ sender: UIButton){

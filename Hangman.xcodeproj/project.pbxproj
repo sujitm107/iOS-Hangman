@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		811A83FA247DBED4002BBC86 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A83F9247DBED4002BBC86 /* Word.swift */; };
+		811A83FC247DBF3E002BBC86 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A83FB247DBF3E002BBC86 /* Result.swift */; };
+		811A83FE247DC34C002BBC86 /* LexicalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A83FD247DC34C002BBC86 /* LexicalEntry.swift */; };
+		811A8400247DC386002BBC86 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A83FF247DC386002BBC86 /* Entry.swift */; };
+		811A8402247DC3B9002BBC86 /* Sense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8401247DC3B9002BBC86 /* Sense.swift */; };
 		812FDE5E2478A5C800108FE2 /* To-Do in Resources */ = {isa = PBXBuildFile; fileRef = 812FDE5D2478A5C800108FE2 /* To-Do */; };
 		813F80AE2474F483003AA586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813F80AD2474F483003AA586 /* AppDelegate.swift */; };
 		813F80B02474F483003AA586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813F80AF2474F483003AA586 /* SceneDelegate.swift */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		811A83F9247DBED4002BBC86 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		811A83FB247DBF3E002BBC86 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		811A83FD247DC34C002BBC86 /* LexicalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalEntry.swift; sourceTree = "<group>"; };
+		811A83FF247DC386002BBC86 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		811A8401247DC3B9002BBC86 /* Sense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
 		812FDE5D2478A5C800108FE2 /* To-Do */ = {isa = PBXFileReference; lastKnownFileType = text; path = "To-Do"; sourceTree = "<group>"; };
 		813F80AA2474F483003AA586 /* HangmanS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangmanS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813F80AD2474F483003AA586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,17 +74,22 @@
 		813F80AC2474F483003AA586 /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
-				813F80AD2474F483003AA586 /* AppDelegate.swift */,
-				813F80AF2474F483003AA586 /* SceneDelegate.swift */,
 				813F80B12474F483003AA586 /* ViewController.swift */,
 				813F80C424750435003AA586 /* WordSelectionViewController.swift */,
 				813F80C62475073A003AA586 /* GuessViewController.swift */,
+				811A83F9247DBED4002BBC86 /* Word.swift */,
+				811A83FB247DBF3E002BBC86 /* Result.swift */,
+				811A83FD247DC34C002BBC86 /* LexicalEntry.swift */,
+				811A83FF247DC386002BBC86 /* Entry.swift */,
+				811A8401247DC3B9002BBC86 /* Sense.swift */,
 				813F80B32474F483003AA586 /* Main.storyboard */,
 				813F80B92474F485003AA586 /* Assets.xcassets */,
 				813F80BB2474F485003AA586 /* LaunchScreen.storyboard */,
 				813F80BE2474F485003AA586 /* Info.plist */,
 				813F80B62474F483003AA586 /* Hangman.xcdatamodeld */,
 				812FDE5D2478A5C800108FE2 /* To-Do */,
+				813F80AD2474F483003AA586 /* AppDelegate.swift */,
+				813F80AF2474F483003AA586 /* SceneDelegate.swift */,
 			);
 			path = Hangman;
 			sourceTree = "<group>";
@@ -151,11 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811A8400247DC386002BBC86 /* Entry.swift in Sources */,
+				811A83FE247DC34C002BBC86 /* LexicalEntry.swift in Sources */,
 				813F80C72475073A003AA586 /* GuessViewController.swift in Sources */,
+				811A83FA247DBED4002BBC86 /* Word.swift in Sources */,
+				811A8402247DC3B9002BBC86 /* Sense.swift in Sources */,
 				813F80B22474F483003AA586 /* ViewController.swift in Sources */,
 				813F80AE2474F483003AA586 /* AppDelegate.swift in Sources */,
 				813F80B82474F483003AA586 /* Hangman.xcdatamodeld in Sources */,
 				813F80C524750435003AA586 /* WordSelectionViewController.swift in Sources */,
+				811A83FC247DBF3E002BBC86 /* Result.swift in Sources */,
 				813F80B02474F483003AA586 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

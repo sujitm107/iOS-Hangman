@@ -120,6 +120,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GhL-zq-aol">
+                                <rect key="frame" x="5" y="407.66666666666669" width="365" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T4S-m8-bfH"/>
+                                </constraints>
+                                <string key="text">Definition: The longest word in any of the major English language dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BwH-j5-ehi">
+                                <rect key="frame" x="0.0" y="126.00000000000001" width="375" height="54.666666666666671"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54.5" id="yit-JI-hBa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="5Dp-D6-Z3E" userLabel="Vowels Stack View">
                                 <rect key="frame" x="62.666666666666657" y="486" width="249.99999999999997" height="40"/>
                                 <subviews>
@@ -534,29 +553,22 @@
                                 <color key="progressTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="trackTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
-                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GameOver" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-zj-vdg">
-                                <rect key="frame" x="50" y="195.66666666666663" width="275" height="250"/>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hook" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-zj-vdg">
+                                <rect key="frame" x="75" y="195.66666666666663" width="225" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="275" id="5d5-U5-Ag8"/>
-                                    <constraint firstAttribute="height" constant="250" id="xuH-jN-Alp"/>
+                                    <constraint firstAttribute="width" constant="225" id="5d5-U5-Ag8"/>
+                                    <constraint firstAttribute="height" constant="200" id="xuH-jN-Alp"/>
                                 </constraints>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                             </imageView>
-                            <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BwH-j5-ehi">
-                                <rect key="frame" x="0.0" y="126.00000000000001" width="375" height="54.666666666666671"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54.5" id="yit-JI-hBa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="GhL-zq-aol" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="0G9-Ht-Vpx"/>
                             <constraint firstItem="gFC-47-Hly" firstAttribute="trailing" secondItem="hDy-uq-U9J" secondAttribute="trailing" id="49w-0G-JAg"/>
                             <constraint firstItem="5Dp-D6-Z3E" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="6f1-sC-CKJ"/>
                             <constraint firstItem="yyN-oP-lQk" firstAttribute="trailing" secondItem="1UX-Kh-CD8" secondAttribute="trailing" id="8bu-Fn-xRH"/>
+                            <constraint firstItem="GhL-zq-aol" firstAttribute="leading" secondItem="ULe-Eh-h12" secondAttribute="leading" constant="5" id="BpZ-hl-ZgN"/>
                             <constraint firstItem="1UX-Kh-CD8" firstAttribute="top" secondItem="hDy-uq-U9J" secondAttribute="bottom" constant="15" id="Dvy-cH-1G2"/>
                             <constraint firstItem="BwH-j5-ehi" firstAttribute="leading" secondItem="ULe-Eh-h12" secondAttribute="leading" id="Ebd-tl-JwL"/>
                             <constraint firstItem="yyN-oP-lQk" firstAttribute="leading" secondItem="1UX-Kh-CD8" secondAttribute="leading" id="Gtg-Ex-v1J"/>
@@ -565,21 +577,24 @@
                             <constraint firstItem="9OE-Xz-ffT" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="NyP-c5-6wQ"/>
                             <constraint firstItem="ULe-Eh-h12" firstAttribute="top" secondItem="BwH-j5-ehi" secondAttribute="top" constant="14" id="V0E-G9-9sv"/>
                             <constraint firstItem="1UX-Kh-CD8" firstAttribute="leading" secondItem="hDy-uq-U9J" secondAttribute="leading" id="aOs-pr-cGi"/>
-                            <constraint firstItem="sQz-zj-vdg" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="bZE-78-CvG"/>
                             <constraint firstItem="gFC-47-Hly" firstAttribute="leading" secondItem="hDy-uq-U9J" secondAttribute="leading" id="cTC-82-gnu"/>
                             <constraint firstItem="5Dp-D6-Z3E" firstAttribute="centerY" secondItem="MzH-8i-3aV" secondAttribute="centerY" constant="100" id="f0D-rg-Not"/>
                             <constraint firstItem="sQz-zj-vdg" firstAttribute="top" secondItem="BwH-j5-ehi" secondAttribute="bottom" constant="15" id="fC4-7c-pPj"/>
                             <constraint firstItem="BwH-j5-ehi" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="hpm-Ac-TpZ"/>
+                            <constraint firstItem="ULe-Eh-h12" firstAttribute="trailing" secondItem="GhL-zq-aol" secondAttribute="trailing" constant="5" id="mwH-G4-ZDj"/>
                             <constraint firstItem="5Dp-D6-Z3E" firstAttribute="top" secondItem="gFC-47-Hly" secondAttribute="bottom" constant="10" id="oQt-2W-DW5"/>
                             <constraint firstItem="1UX-Kh-CD8" firstAttribute="trailing" secondItem="hDy-uq-U9J" secondAttribute="trailing" id="qDE-fd-BQK"/>
                             <constraint firstItem="ULe-Eh-h12" firstAttribute="trailing" secondItem="BwH-j5-ehi" secondAttribute="trailing" id="qZA-eA-XqQ"/>
+                            <constraint firstItem="sQz-zj-vdg" firstAttribute="centerX" secondItem="MzH-8i-3aV" secondAttribute="centerX" id="wRM-VP-eRo"/>
                             <constraint firstItem="yyN-oP-lQk" firstAttribute="top" secondItem="1UX-Kh-CD8" secondAttribute="bottom" constant="15" id="wgJ-ZP-VPx"/>
                             <constraint firstItem="9OE-Xz-ffT" firstAttribute="top" secondItem="yyN-oP-lQk" secondAttribute="bottom" constant="15" id="wuR-Ya-lr9"/>
+                            <constraint firstItem="GhL-zq-aol" firstAttribute="top" secondItem="sQz-zj-vdg" secondAttribute="bottom" constant="12" id="ypd-Gy-ATa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ULe-Eh-h12"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="7Gr-L8-aXF"/>
                     <connections>
+                        <outlet property="definitionLabel" destination="GhL-zq-aol" id="KYd-IP-S2Q"/>
                         <outlet property="guessProgressView" destination="gFC-47-Hly" id="b08-d4-NZn"/>
                         <outlet property="guessWordLabel" destination="BwH-j5-ehi" id="7sh-ci-Hu8"/>
                         <outlet property="hangImageView" destination="sQz-zj-vdg" id="Lrc-dK-Xr9"/>
@@ -591,6 +606,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GameOver" width="1500" height="1200"/>
+        <image name="Hook" width="1500" height="1200"/>
     </resources>
 </document>
