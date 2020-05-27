@@ -86,7 +86,7 @@
                                     <action selector="confirmTapped:" destination="4MG-sW-50G" eventType="touchUpInside" id="eKy-Fd-s2T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0l-Ie-pDJ">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0l-Ie-pDJ">
                                 <rect key="frame" x="159" y="441" width="57" height="30"/>
                                 <state key="normal" title="Random"/>
                             </button>
