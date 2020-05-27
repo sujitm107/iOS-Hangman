@@ -12,6 +12,12 @@ class WordSelectionViewController: UIViewController {
 
     @IBOutlet weak var wordTextField: UITextField!
     var wordText: String?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Pick a word"
+        setUI()
+    }
         
     func setUI(){
         self.wordTextField.text = ""
