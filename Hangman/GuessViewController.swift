@@ -12,7 +12,7 @@ class GuessViewController: UIViewController {
     
     var word: String?
     var blankWord: String = ""
-    var definition: String = "Definition"
+    var definition: String = "Definition: ..."
     
     var WordJSON: Word?
     
