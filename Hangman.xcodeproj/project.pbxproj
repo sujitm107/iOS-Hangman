@@ -22,6 +22,7 @@
 		813F80BD2474F485003AA586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813F80BB2474F485003AA586 /* LaunchScreen.storyboard */; };
 		813F80C524750435003AA586 /* WordSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813F80C424750435003AA586 /* WordSelectionViewController.swift */; };
 		813F80C72475073A003AA586 /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813F80C62475073A003AA586 /* GuessViewController.swift */; };
+		81A6957A2489ADAE00C07F20 /* RandomWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A695792489ADAE00C07F20 /* RandomWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,7 @@
 		811A83FF247DC386002BBC86 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		811A8401247DC3B9002BBC86 /* Sense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sense.swift; sourceTree = "<group>"; };
 		812FDE5D2478A5C800108FE2 /* To-Do */ = {isa = PBXFileReference; lastKnownFileType = text; path = "To-Do"; sourceTree = "<group>"; };
-		813F80AA2474F483003AA586 /* HangmanS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HangmanS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813F80AA2474F483003AA586 /* Vocab Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vocab Hangman.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		813F80AD2474F483003AA586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		813F80AF2474F483003AA586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		813F80B12474F483003AA586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		813F80BE2474F485003AA586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		813F80C424750435003AA586 /* WordSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordSelectionViewController.swift; sourceTree = "<group>"; };
 		813F80C62475073A003AA586 /* GuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessViewController.swift; sourceTree = "<group>"; };
+		81A695792489ADAE00C07F20 /* RandomWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 		813F80AB2474F483003AA586 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				813F80AA2474F483003AA586 /* HangmanS.app */,
+				813F80AA2474F483003AA586 /* Vocab Hangman.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,14 +76,9 @@
 		813F80AC2474F483003AA586 /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
-				813F80B12474F483003AA586 /* ViewController.swift */,
-				813F80C424750435003AA586 /* WordSelectionViewController.swift */,
-				813F80C62475073A003AA586 /* GuessViewController.swift */,
-				811A83F9247DBED4002BBC86 /* Word.swift */,
-				811A83FB247DBF3E002BBC86 /* Result.swift */,
-				811A83FD247DC34C002BBC86 /* LexicalEntry.swift */,
-				811A83FF247DC386002BBC86 /* Entry.swift */,
-				811A8401247DC3B9002BBC86 /* Sense.swift */,
+				81A69578248999C500C07F20 /* RandomWord Model */,
+				81A69577248999AB00C07F20 /* Controllers */,
+				81A695762489999100C07F20 /* Dictionary Model */,
 				813F80B32474F483003AA586 /* Main.storyboard */,
 				813F80B92474F485003AA586 /* Assets.xcassets */,
 				813F80BB2474F485003AA586 /* LaunchScreen.storyboard */,
@@ -92,6 +89,36 @@
 				813F80AF2474F483003AA586 /* SceneDelegate.swift */,
 			);
 			path = Hangman;
+			sourceTree = "<group>";
+		};
+		81A695762489999100C07F20 /* Dictionary Model */ = {
+			isa = PBXGroup;
+			children = (
+				811A83F9247DBED4002BBC86 /* Word.swift */,
+				811A83FB247DBF3E002BBC86 /* Result.swift */,
+				811A83FD247DC34C002BBC86 /* LexicalEntry.swift */,
+				811A83FF247DC386002BBC86 /* Entry.swift */,
+				811A8401247DC3B9002BBC86 /* Sense.swift */,
+			);
+			path = "Dictionary Model";
+			sourceTree = "<group>";
+		};
+		81A69577248999AB00C07F20 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				813F80B12474F483003AA586 /* ViewController.swift */,
+				813F80C424750435003AA586 /* WordSelectionViewController.swift */,
+				813F80C62475073A003AA586 /* GuessViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		81A69578248999C500C07F20 /* RandomWord Model */ = {
+			isa = PBXGroup;
+			children = (
+				81A695792489ADAE00C07F20 /* RandomWord.swift */,
+			);
+			path = "RandomWord Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,7 +138,7 @@
 			);
 			name = Hangman;
 			productName = Hangman;
-			productReference = 813F80AA2474F483003AA586 /* HangmanS.app */;
+			productReference = 813F80AA2474F483003AA586 /* Vocab Hangman.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81A6957A2489ADAE00C07F20 /* RandomWord.swift in Sources */,
 				811A8400247DC386002BBC86 /* Entry.swift in Sources */,
 				811A83FE247DC34C002BBC86 /* LexicalEntry.swift in Sources */,
 				813F80C72475073A003AA586 /* GuessViewController.swift in Sources */,
@@ -328,7 +356,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.sujit;
-				PRODUCT_NAME = HangmanS;
+				PRODUCT_NAME = "Vocab Hangman";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,7 +374,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.sujit;
-				PRODUCT_NAME = HangmanS;
+				PRODUCT_NAME = "Vocab Hangman";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

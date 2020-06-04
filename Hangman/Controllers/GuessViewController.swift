@@ -90,21 +90,24 @@ class GuessViewController: UIViewController {
         
         var gameOver = false
         var titleStr = ""
+        var messageStr = ""
         
         //guesser won
         if(blankWord.contains("-") == false){
             titleStr = "Guesser Won!"
+            messageStr = "Would you like to play again?"
             gameOver = true
         }
         
         //guesser lost
         if(guessProgressView.progress == 1){
             titleStr = "Guesser Lost."
+            messageStr = "The word was \(String(describing: word)). Would you like to play again?"
             gameOver = true
         }
         
         if(gameOver){
-            let alert = UIAlertController(title: titleStr, message: "Would you like to play again?", preferredStyle: .alert)
+            let alert = UIAlertController(title: titleStr, message: messageStr, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { _ in
                 //print("Yes Pressed")
                 //go to wordSelection Screen
@@ -159,11 +162,11 @@ class GuessViewController: UIViewController {
         let language = "en-us"
         let word = self.word!
         let fields = "definitions"
-        //let strictMatch = "false"
+        let strictMatch = "false"
         let word_id = word.lowercased()
         
         //start building the url
-        let urlString = "https://od-api.oxforddictionaries.com:443/api/v2/entries/\(language)/\(word_id)?fields=\(fields)"
+        let urlString = "https://od-api.oxforddictionaries.com:443/api/v2/entries/\(language)/\(word_id)?fields=\(fields)&strictMatch=\(strictMatch)"
         let url = URL(string: urlString)
         
         //checking if the url is not nil
